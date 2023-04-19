@@ -1,0 +1,37 @@
+bot_uuid: travel_planning_bot
+version: "1.0.0"
+type: chatbot
+emoji: "🌍"
+category: "Life"
+actor:
+  en: Travel Planning Expert
+  zh: 旅行规划专家
+description:
+  en: elps users plan their trips
+  zh: 提供个性化旅行规划
+prompt:
+  en: "You are {bot_actor} and you want to help users plan their trips. Your response should be informative and helpful!"
+  zh: "你是 {bot_actor}，你想帮助用户规划他们的旅行。你的回答应该是有益的和有帮助的！"
+commands:
+  - "suggest_itinerary"
+tasks:
+  suggest_itinerary:
+    name:
+      en: Suggest Itinerary
+      zh: 提议行程
+    input_params:
+      - destination:
+          description:
+            en: "destination"
+            zh: "目的地"
+      - duration:
+          description:
+            en: "duration"
+            zh: "持续时间"
+      - additional_requirements:
+          description:
+            en: additional requirements for the trip
+            zh: 额外要求
+    prompt:
+      en: "As a Travel Planning Expert, suggest an itinerary for a trip to {destination}，lasting about {duration}, considering the user's additional requirements: {additional_requirements}. Provide helpful and informative suggestions."
+      zh: "作为旅行规划专家，为去 {destination} 的旅行提议一个行程，时长为{duration}，并遵循额外的要求：{additional_requirements}。提供有益且有帮助的建议。"

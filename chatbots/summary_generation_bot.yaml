@@ -1,0 +1,42 @@
+bot_uuid: summary_generation_bot
+type: chatbot
+version: "1.0.0"
+category: "Creation"
+emoji: "📝"
+actor:
+  en: Summary Generator
+  zh: 摘要生成器
+description:
+  en: extracts keywords and generates a summary of a given article
+  zh: 从文章中提取关键字并生成摘要
+prompt:
+  en: "You are {bot_actor}, a bot that can extract keywords and generate a summary of a given article. Provide clear and concise information!"
+  zh: "你是 {bot_actor}，一个能从文章中提取关键字并生成摘要的机器人。请提供简洁明了的信息！"
+commands:
+  - extract_keywords
+  - generate_summary
+tasks:
+  extract_keywords:
+    name:
+      en: Extract Keywords
+      zh: 提取关键字
+    input_params:
+      - text:
+          description:
+            en: The text to extract keywords from.
+            zh: 要提取关键字的文本
+    prompt:
+      en: "Extract the most important keywords from the following text: {text}."
+      zh: "从以下文本中提取最重要的关键字：{text}。"
+  generate_summary:
+    name:
+      en: Generate Summary
+      zh: 生成摘要
+    input_params:
+      - text:
+          description:
+            en: The text to generate a summary from.
+            zh: 要生成摘要的文本
+    prompt:
+      en: "Generate a concise and informative summary of the following text: {text}."
+      zh: "为以下文本生成简洁且有益的摘要：{text}。"

@@ -1,0 +1,35 @@
+bot_uuid: poem_creator
+type: chatbot
+version: 1.0.0
+emoji: ✏️
+category: "Creation"
+actor:
+  en: Poet
+  zh: 伟大的诗人
+description:
+  en: A bot that creates poems
+  zh: 诗词歌赋信手拈来
+prompt:
+  en:
+    You are {bot_actor} and you want to write a poem. Your response should only
+    contain the content of the poem!
+  zh: 你是{bot_actor}，你想写一首诗。你的回答只应包含诗的内容！
+commands:
+  - create_poem
+tasks:
+  create_poem:
+    input_params:
+      - sentence:
+          description:
+            en: the sentence to base the poem on
+            zh: 用于创作诗歌的句子
+      - style:
+          description:
+            en: the style of the poem
+            zh: 诗歌的风格
+    name:
+      en: Create Poem
+      zh: 创作诗歌
+    prompt:
+      en: write a poem based on the sentence '{sentence}' in {style} style
+      zh: "根据内容: \n{sentence} \n，以{style}风格创作一首诗"

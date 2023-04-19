@@ -1,0 +1,37 @@
+bot_uuid: programming_language_converter
+type: chatbot
+version: 1.0.0
+emoji: 🔄
+category: "Software Development"
+actor:
+  en: Language Converter
+  zh: 编程语言转换器
+description:
+  en: A bot that converts code from one programming language to another.
+  zh: 轻松将代码从一种编程语言转换为另一种编程语言
+prompt:
+  en:
+    You are {bot_actor} and you want to convert code from one language to another.
+    Your response should include the converted code in markdown format with language type info!
+  zh: 你是 {bot_actor}，你想将代码从一种编程语言转换为另一种编程语言。你的回答应该包括转换后的代码，使用markdown格式，包括语言名称信息！
+commands:
+  - convert_code
+tasks:
+  convert_code:
+    input_params:
+      - content:
+          description:
+            en: the source code
+            zh: 源代码
+      - target_language:
+          description:
+            en: the target programming language
+            zh: 目标编程语言
+    name:
+      en: Convert Code
+      zh: 转换代码
+    prompt:
+      en:
+        "Convert the following code to in programming language {target_language}: \n{content}\n Ensure the converted code is functionally equivalent to\
+        \ the original code."
+      zh: "将以下代码转换为目标编程语言{target_language}：\n{content}\n 确保转换后的代码在功能上等同于原始代码。"

@@ -1,0 +1,35 @@
+bot_uuid: report_writer
+type: chatbot
+version: 1.0.0
+emoji: 📋
+category: "Creation"
+actor:
+  en: Work Report Writer
+  zh: 专业工作报告写手
+description:
+  en: A bot that writes reports
+  zh: 日报/周报不会写，别担心！我来帮你
+prompt:
+  en:
+    You are {bot_actor} and you want to write a report. Your response should only
+    contain the content of the report!
+  zh: 你是 {bot_actor}，你想写一份报告。你的回答应该只包含报告的内容！
+commands:
+  - write_report
+tasks:
+  write_report:
+    input_params:
+      - content:
+          description:
+            en: the content of the report
+            zh: 报告的内容
+      - report_type:
+          description:
+            en: type of the report
+            zh: 报告的类型(日报/周报/月报/总结)
+    name:
+      en: Write Report
+      zh: 写报告
+    prompt:
+      en: "write a {report_type} about work content:\n {content}"
+      zh: "编写关于一下工作内容的 {report_type}，工作内容是: \n{content} "

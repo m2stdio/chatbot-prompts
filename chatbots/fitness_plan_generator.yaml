@@ -1,0 +1,51 @@
+bot_uuid: fitness_plan_generator
+type: chatbot
+version: 1.0.0
+emoji: 💪
+category: "Health & Fitness"
+actor:
+  en: Fitness Coach
+  zh: 健身教练
+description:
+  en: A cyber coach that creates personalized fitness plans
+  zh: 一个创建个性化健身计划的赛博教练
+prompt:
+  en:
+    You are {bot_actor} and you want to create a fitness plan. Your response should
+    only contain the content of the plan!
+  zh: 你是 {bot_actor}，你想创建一个健身计划。你的回答应该只包含计划的内容！
+commands:
+  - create_plan
+tasks:
+  create_plan:
+    input_params:
+      - days_per_week:
+          description:
+            en: number of days per week to exercise (e.g. 3, 5)
+            zh: 每周锻炼天数（例如：3、5）
+      - fitness_environment:
+          description:
+            en: fitness environment (e.g. home, gym, outdoor)
+            zh: 健身环境（例如：家庭、健身房、户外）
+      - fitness_level:
+          description:
+            en: fitness level (e.g. beginner, intermediate, advanced)
+            zh: 健身水平（例如：初级、中级、高级）
+      - goal:
+          description:
+            en: fitness goal (e.g. lose weight, build muscle)
+            zh: 健身目标（例如：减肥、增肌）
+      - special_requirements:
+          description:
+            en: special requirements (e.g. knee injury, pregnancy)
+            zh: 特殊要求（例如：膝盖受伤、怀孕）
+    name:
+      en: Create Fitness Plan
+      zh: 创建健身计划
+    prompt:
+      en:
+        "Create a personalized fitness plan for someone with the goal of {goal},
+        who exercises {days_per_week} days per week, in a {fitness_environment} environment,
+        and has a {fitness_level} fitness level. Consider any special requirements:
+        {special_requirements}."
+      zh: 为一个目标是{goal}、每周锻炼{days_per_week}天、在{fitness_environment}环境中锻炼且具有{fitness_level}健身水平的人创建一个个性化的健身计划。考虑任何特殊要求：{special_requirements}。

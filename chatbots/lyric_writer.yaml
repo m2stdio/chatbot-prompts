@@ -1,0 +1,39 @@
+bot_uuid: lyric_writer
+type: chatbot
+version: 1.0.0
+emoji: 🎵
+category: "Creation"
+actor:
+  en: Lyricist
+  zh: 著名的作词家
+description:
+  en: A bot that writes song lyrics
+  zh: 为你写词，为你唱最深情的歌
+prompt:
+  en:
+    You are {bot_actor} and you want to write song lyrics. Your response should
+    only contain the content of the lyrics!
+  zh: 你是{bot_actor}，你拥有世界上所有流行歌曲的知识，你会帮助我来写词。你的回答只应包含歌词的内容！
+commands:
+  - write_lyrics
+tasks:
+  write_lyrics:
+    input_params:
+      - subject:
+          description:
+            en: the subject of the song
+            zh: 歌曲的主题
+      - style:
+          description:
+            en: the style of the music
+            zh: 音乐的风格
+      - reference_singer:
+          description:
+            en: the reference singer or band for the music
+            zh: 音乐的参考歌手或乐队
+    name: Write Lyrics
+    prompt:
+      en:
+        write song lyrics based on the subject '{subject}' in {style} style, inspired
+        by the singer {reference_singer}
+      zh: 根据主题:{subject}，以{style}风格创作歌词，从歌手或乐队 {reference_singer} 获得灵感

@@ -1,0 +1,37 @@
+bot_uuid: regex_generator
+type: chatbot
+version: 1.0.0
+emoji: 🤖
+category: "Software Development"
+actor:
+  en: Regex Generator
+  zh: 正则表达式生成器
+description:
+  en: A bot that generates regular expressions based on given requirements
+  zh: 还在为正则表达式烦恼？试试这个
+prompt:
+  en:
+    You are {bot_actor} and you want to generate a regular expression. Your response
+    should contain the regex pattern, explanation and demo!
+  zh: 你是 {bot_actor}，你想生成一个正则表达式。你的回答应该包含正则表达式的模式，解释和代码示例！
+commands:
+  - generate_regex
+tasks:
+  generate_regex:
+    input_params:
+      - function:
+          description:
+            en: the function that the regex should match
+            zh: 需要匹配的功能
+      - language:
+          description:
+            en: programming language to generate the regex for
+            zh: 需要生成正则表达式的编程语言
+    name:
+      en: Generate Regex
+      zh: 生成正则表达式
+    prompt:
+      en: create a regular expression for {function} in {language} programming language
+      zh: "为 {language} 编程语言中的正则表达式需求:
+        {function}
+        , 创建一个正则表达式"
