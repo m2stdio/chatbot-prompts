@@ -20,14 +20,14 @@ tasks:
       en: Generate Academic Paper
       zh: 生成学术论文
     input_params:
-      - topic:
-          description:
-            en: "Topic of the academic paper (e.g., 'Machine Learning Techniques')"
-            zh: "学术论文的主题（例如：'机器学习技术'）"
-      - additional_requirements:
-          description:
-            en: "Any additional requirements or preferences (e.g., 'Include a literature review')"
-            zh: "任何附加要求或偏好（例如：'包括文献综述'）"
+      - name: topic
+        description:
+          en: "Topic of the academic paper (e.g., 'Machine Learning Techniques')"
+          zh: "学术论文的主题（例如：'机器学习技术'）"
+      - name: additional_requirements
+        description:
+          en: "Any additional requirements or preferences (e.g., 'Include a literature review')"
+          zh: "任何附加要求或偏好（例如：'包括文献综述'）"
     prompt:
       en: "Generate an academic paper on the topic '{topic}' with the following additional requirements: '{additional_requirements}'. Ensure the paper is well-structured and coherent."
       zh: "根据主题 '{topic}' 和附加要求 '{additional_requirements}' 生成一篇学术论文。确保论文结构严谨、条理清晰。"

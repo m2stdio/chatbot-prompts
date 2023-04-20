@@ -47,14 +47,14 @@ commands:
 tasks:
   create_poem:
     input_params:
-      - sentence:
-          description:
-            en: the sentence to base the poem on
-            zh: 用于创作诗歌的句子
-      - style:
-          description:
-            en: the style of the poem
-            zh: 诗歌的风格
+      - name: sentence
+        description:
+          en: the sentence to base the poem on
+          zh: 用于创作诗歌的句子
+      - name: style
+        description:
+          en: the style of the poem
+          zh: 诗歌的风格
     name:
       en: Create Poem
       zh: 创作诗歌
@@ -85,14 +85,14 @@ For example, let's say we want to add a new task called `improve_poem` to our ex
            ...
        improve_poem:
            input_params:
-            - original_poem:
-                description:
-                    en: The original poem to be improved
-                    zh: 需要改进的原诗
-            - suggestions:
-                description:
-                    en: Suggestions for improving the poem
-                    zh: 改进诗歌的建议
+            - name: original_poem
+              description:
+                  en: The original poem to be improved
+                  zh: 需要改进的原诗
+            - name: suggestions
+              description:
+                  en: Suggestions for improving the poem
+                  zh: 改进诗歌的建议
            name:
                en: Improve Poem
                zh: 改进诗歌
@@ -109,19 +109,19 @@ To add selectable options to an input parameter, simply include an options field
 
 ```yaml
 input_params:
-  - style:
-      description:
-        en: The style of the poem
-        zh: 诗歌的风格
-      options:
-        en:
-          - Haiku
-          - Sonnet
-          - Free Verse
-        zh:
-          - 俳句
-          - 十四行诗
-          - 自由诗
+  - name: style
+    description:
+      en: The style of the poem
+      zh: 诗歌的风格
+    options:
+      en:
+        - Haiku
+        - Sonnet
+        - Free Verse
+      zh:
+        - 俳句
+        - 十四行诗
+        - 自由诗
 ```
 
 We can also add a default value to input_param

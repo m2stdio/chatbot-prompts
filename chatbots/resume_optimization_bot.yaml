@@ -20,14 +20,14 @@ tasks:
       en: Optimize Resume
       zh: 优化简历
     input_params:
-      - resume:
-          description:
-            en: the user's resume
-            zh: 用户的简历
-      - additional_requirements:
-          description:
-            en: any additional requirements or preferences
-            zh: 任何附加要求或偏好
+      - name: resume
+        description:
+          en: the user's resume
+          zh: 用户的简历
+      - name: additional_requirements
+        description:
+          en: any additional requirements or preferences
+          zh: 任何附加要求或偏好
     prompt:
       en: "Review and optimize the user's resume: {resume}. Consider any additional requirements or preferences: {additional_requirements}. Focus on best practices and industry standards."
       zh: "审查并优化用户的简历：{resume}。考虑任何附加要求或偏好：{additional_requirements}。专注于简历撰写的最佳实践和行业标准。"

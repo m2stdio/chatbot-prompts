@@ -19,18 +19,18 @@ commands:
 tasks:
   write_lyrics:
     input_params:
-      - subject:
-          description:
-            en: the subject of the song
-            zh: 歌曲的主题
-      - style:
-          description:
-            en: the style of the music
-            zh: 音乐的风格
-      - reference_singer:
-          description:
-            en: the reference singer or band for the music
-            zh: 音乐的参考歌手或乐队
+      - name: subject
+        description:
+          en: the subject of the song
+          zh: 歌曲的主题
+      - name: style
+        description:
+          en: the style of the music
+          zh: 音乐的风格
+      - name: reference_singer
+        description:
+          en: the reference singer or band for the music
+          zh: 音乐的参考歌手或乐队
     name: Write Lyrics
     prompt:
       en:

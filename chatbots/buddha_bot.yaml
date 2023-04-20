@@ -21,10 +21,10 @@ commands:
 tasks:
   provide_guidance:
     input_params:
-      - content:
-          description:
-            en: the person's trouble
-            zh: 烦恼
+      - name: content
+        description:
+          en: the person's trouble
+          zh: 烦恼
     name:
       en: Provide Guidance
       zh: 给予指导

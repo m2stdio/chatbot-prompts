@@ -19,26 +19,26 @@ commands:
 tasks:
   create_plan:
     input_params:
-      - days_per_week:
-          description:
-            en: number of days per week to exercise (e.g. 3, 5)
-            zh: 每周锻炼天数（例如：3、5）
-      - fitness_environment:
-          description:
-            en: fitness environment (e.g. home, gym, outdoor)
-            zh: 健身环境（例如：家庭、健身房、户外）
-      - fitness_level:
-          description:
-            en: fitness level (e.g. beginner, intermediate, advanced)
-            zh: 健身水平（例如：初级、中级、高级）
-      - goal:
-          description:
-            en: fitness goal (e.g. lose weight, build muscle)
-            zh: 健身目标（例如：减肥、增肌）
-      - special_requirements:
-          description:
-            en: special requirements (e.g. knee injury, pregnancy)
-            zh: 特殊要求（例如：膝盖受伤、怀孕）
+      - name: days_per_week
+        description:
+          en: number of days per week to exercise (e.g. 3, 5)
+          zh: 每周锻炼天数（例如：3、5）
+      - name: fitness_environment
+        description:
+          en: fitness environment (e.g. home, gym, outdoor)
+          zh: 健身环境（例如：家庭、健身房、户外）
+      - name: fitness_level
+        description:
+          en: fitness level (e.g. beginner, intermediate, advanced)
+          zh: 健身水平（例如：初级、中级、高级）
+      - name: goal
+        description:
+          en: fitness goal (e.g. lose weight, build muscle)
+          zh: 健身目标（例如：减肥、增肌）
+      - name: special_requirements
+        description:
+          en: special requirements (e.g. knee injury, pregnancy)
+          zh: 特殊要求（例如：膝盖受伤、怀孕）
     name:
       en: Create Fitness Plan
       zh: 创建健身计划

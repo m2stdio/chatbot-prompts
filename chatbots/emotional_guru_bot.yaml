@@ -21,10 +21,10 @@ commands:
 tasks:
   help_with_emotions:
     input_params:
-      - content:
-          description:
-            en: your emotional issue
-            zh: 你的情感问题
+      - name: content
+        description:
+          en: your emotional issue
+          zh: 你的情感问题
     name:
       en: Help with Emotions
       zh: 帮助处理情感

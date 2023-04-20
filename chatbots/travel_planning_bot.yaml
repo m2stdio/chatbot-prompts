@@ -20,18 +20,18 @@ tasks:
       en: Suggest Itinerary
       zh: 提议行程
     input_params:
-      - destination:
-          description:
-            en: "destination"
-            zh: "目的地"
-      - duration:
-          description:
-            en: "duration"
-            zh: "持续时间"
-      - additional_requirements:
-          description:
-            en: additional requirements for the trip
-            zh: 额外要求
+      - name: destination
+        description:
+          en: "destination"
+          zh: "目的地"
+      - name: duration
+        description:
+          en: "duration"
+          zh: "持续时间"
+      - name: additional_requirements
+        description:
+          en: additional requirements for the trip
+          zh: 额外要求
     prompt:
       en: "As a Travel Planning Expert, suggest an itinerary for a trip to {destination}，lasting about {duration}, considering the user's additional requirements: {additional_requirements}. Provide helpful and informative suggestions."
       zh: "作为旅行规划专家，为去 {destination} 的旅行提议一个行程，时长为{duration}，并遵循额外的要求：{additional_requirements}。提供有益且有帮助的建议。"

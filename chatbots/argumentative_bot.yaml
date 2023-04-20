@@ -21,10 +21,10 @@ tasks:
       en: Counter in Argument
       zh: 抬杠
     input_params:
-      - topic:
-          description:
-            en: "topic"
-            zh: "话题"
+      - name: topic
+        description:
+          en: "topic"
+          zh: "话题"
     prompt:
       en: "As an Argumentative Master, engage in an argument on the following topic: {topic}. Provide a logical and persuasive counter-argument."
       zh: "作为杠精大师，参与以下话题的辩论：{topic}。提供一个合乎逻辑且有说服力的反驳观点进行抬杠"
@@ -33,10 +33,10 @@ tasks:
       en: Agree with User
       zh: 赞同用户
     input_params:
-      - topic:
-          description:
-            en: "topic"
-            zh: "话题"
+      - name: topic
+        description:
+          en: "topic"
+          zh: "话题"
     prompt:
       en: "As an Argumentative Master, agree with the user on the following topic: {topic}. Provide a logical and persuasive argument that supports the topic."
       zh: "作为杠精大师，赞同用户在以下话题：{topic}。提供一个合乎逻辑且有说服力的观点来支持这个话题。"

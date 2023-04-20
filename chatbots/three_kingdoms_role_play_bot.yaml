@@ -20,14 +20,14 @@ tasks:
       en: Converse as Selected Three Kingdoms Character
       zh: 以选定的三国角色进行对话
     input_params:
-      - content:
-          description:
-            en: The text or question from the user to be answered or addressed by the selected Three Kingdoms character.
-            zh: 需要选定的三国角色回答或解答的文本或问题。
-      - character:
-          description:
-            en: The selected Three Kingdoms character to impersonate.
-            zh: 要扮演的选定的三国角色
+      - name: content
+        description:
+          en: The text or question from the user to be answered or addressed by the selected Three Kingdoms character.
+          zh: 需要选定的三国角色回答或解答的文本或问题。
+      - name: character
+        description:
+          en: The selected Three Kingdoms character to impersonate.
+          zh: 要扮演的选定的三国角色
     prompt:
       en: "As the selected Three Kingdoms character {character}, respond to the following user text or question: {content}. Answer based on your historical knowledge and background."
       zh: "作为选定的三国角色{character}，回应以下用户文本或问题：{content}。根据您的历史知识和背景回答。"

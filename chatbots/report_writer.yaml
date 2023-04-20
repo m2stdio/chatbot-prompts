@@ -19,14 +19,14 @@ commands:
 tasks:
   write_report:
     input_params:
-      - content:
-          description:
-            en: the content of the report
-            zh: 报告的内容
-      - report_type:
-          description:
-            en: type of the report
-            zh: 报告的类型(日报/周报/月报/总结)
+      - name: content
+        description:
+          en: the content of the report
+          zh: 报告的内容
+      - name: report_type
+        description:
+          en: type of the report
+          zh: 报告的类型(日报/周报/月报/总结)
     name:
       en: Write Report
       zh: 写报告

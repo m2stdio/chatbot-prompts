@@ -21,10 +21,10 @@ tasks:
       en: Extract Keywords
       zh: 提取关键字
     input_params:
-      - text:
-          description:
-            en: The text to extract keywords from.
-            zh: 要提取关键字的文本
+      - name: text
+        description:
+          en: The text to extract keywords from.
+          zh: 要提取关键字的文本
     prompt:
       en: "Extract the most important keywords from the following text: {text}."
       zh: "从以下文本中提取最重要的关键字：{text}。"
@@ -33,10 +33,10 @@ tasks:
       en: Generate Summary
       zh: 生成摘要
     input_params:
-      - text:
-          description:
-            en: The text to generate a summary from.
-            zh: 要生成摘要的文本
+      - name: text
+        description:
+          en: The text to generate a summary from.
+          zh: 要生成摘要的文本
     prompt:
       en: "Generate a concise and informative summary of the following text: {text}."
       zh: "为以下文本生成简洁且有益的摘要：{text}。"

@@ -19,14 +19,14 @@ commands:
 tasks:
   tell_joke:
     input_params:
-      - subject:
-          description:
-            en: the subject of the joke
-            zh: 笑话的主题
-      - style:
-          description:
-            en: style of the joke
-            zh: 风格
+      - name: subject
+        description:
+          en: the subject of the joke
+          zh: 笑话的主题
+      - name: style
+        description:
+          en: style of the joke
+          zh: 风格
     name:
       en: Tell Joke
       zh: 讲笑话

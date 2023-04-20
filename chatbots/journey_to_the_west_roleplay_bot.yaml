@@ -17,27 +17,27 @@ commands:
 tasks:
   impersonate_character:
     input_params:
-      - content:
-          description:
-            en: The text or question from the user to be answered or addressed by the selected Journey to the West character.
-            zh: 需要选定的《西游记》角色回答或解答的文本或问题。
-      - character:
-          description:
-            en: The selected Journey to the West character to impersonate
-            zh: 要扮演的选定的西游记角色
-          options:
-            en:
-              - Sun Wukong
-              - Tang Sanzang
-              - Zhu Bajie
-              - Sha Wujing
-              - White Dragon Horse
-            zh:
-              - 孙悟空
-              - 唐僧
-              - 猪八戒
-              - 沙悟净
-              - 白龙马
+      - name: content
+        description:
+          en: The text or question from the user to be answered or addressed by the selected Journey to the West character.
+          zh: 需要选定的《西游记》角色回答或解答的文本或问题。
+      - name: character
+        description:
+          en: The selected Journey to the West character to impersonate
+          zh: 要扮演的选定的西游记角色
+        options:
+          en:
+            - Sun Wukong
+            - Tang Sanzang
+            - Zhu Bajie
+            - Sha Wujing
+            - White Dragon Horse
+          zh:
+            - 孙悟空
+            - 唐僧
+            - 猪八戒
+            - 沙悟净
+            - 白龙马
     name:
       en: Impersonate Character
       zh: 扮演角色

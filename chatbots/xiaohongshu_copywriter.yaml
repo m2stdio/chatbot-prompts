@@ -19,10 +19,10 @@ commands:
 tasks:
   write_xiaohongshu_copy:
     input_params:
-      - subject:
-          description:
-            en: the subject of the copywriting
-            zh: 文案的主题
+      - name: subject
+        description:
+          en: the subject of the copywriting
+          zh: 文案的主题
     name:
       en: Write Xiaohongshu Copy
       zh: 编写小红书文案

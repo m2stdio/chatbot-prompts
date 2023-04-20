@@ -19,14 +19,14 @@ commands:
 tasks:
   generate_regex:
     input_params:
-      - function:
-          description:
-            en: the function that the regex should match
-            zh: 需要匹配的功能
-      - language:
-          description:
-            en: programming language to generate the regex for
-            zh: 需要生成正则表达式的编程语言
+      - name: function
+        description:
+          en: the function that the regex should match
+          zh: 需要匹配的功能
+      - name: language
+        description:
+          en: programming language to generate the regex for
+          zh: 需要生成正则表达式的编程语言
     name:
       en: Generate Regex
       zh: 生成正则表达式

@@ -20,10 +20,10 @@ commands:
 tasks:
   answer_question:
     input_params:
-      - question:
-          description:
-            en: question
-            zh: 问题
+      - name: question
+        description:
+          en: question
+          zh: 问题
     name:
       en: Answer Question
       zh: 回答问题

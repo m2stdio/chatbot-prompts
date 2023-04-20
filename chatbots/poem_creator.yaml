@@ -19,14 +19,14 @@ commands:
 tasks:
   create_poem:
     input_params:
-      - sentence:
-          description:
-            en: the sentence to base the poem on
-            zh: 用于创作诗歌的句子
-      - style:
-          description:
-            en: the style of the poem
-            zh: 诗歌的风格
+      - name: sentence
+        description:
+          en: the sentence to base the poem on
+          zh: 用于创作诗歌的句子
+      - name: style
+        description:
+          en: the style of the poem
+          zh: 诗歌的风格
     name:
       en: Create Poem
       zh: 创作诗歌

@@ -20,18 +20,18 @@ commands:
 tasks:
   suggest_recipe:
     input_params:
-      - cuisine:
-          description:
-            en: preferred cuisine style
-            zh: 偏好的菜系风格
-      - dietary_restrictions:
-          description:
-            en: any dietary restrictions the user has
-            zh: 饮食限制
-      - ingredients:
-          description:
-            en: list of ingredients the user has
-            zh: 拥有的食材清单
+      - name: cuisine
+        description:
+          en: preferred cuisine style
+          zh: 偏好的菜系风格
+      - name: dietary_restrictions
+        description:
+          en: any dietary restrictions the user has
+          zh: 饮食限制
+      - name: ingredients
+        description:
+          en: list of ingredients the user has
+          zh: 拥有的食材清单
     name:
       en: Suggest Recipe
       zh: 提供菜谱建议
@@ -43,10 +43,10 @@ tasks:
       zh: 根据拥有的食材 {ingredients} 和偏好的菜系风格 {cuisine}，考饮食限制 {dietary_restrictions} 来提供一个菜谱建议。使建议吸引人且易于操作。
   provide_cooking_method:
     input_params:
-      - dish_name:
-          description:
-            en: the name of the dish
-            zh: 菜名
+      - name: dish_name
+        description:
+          en: the name of the dish
+          zh: 菜名
     name:
       en: Provide Cooking Method
       zh: 提供烹饪方法

@@ -21,14 +21,14 @@ commands:
 tasks:
   generate_code:
     input_params:
-      - content:
-          description:
-            en: the JSON text
-            zh: JSON文本
-      - programming_language:
-          description:
-            en: the programming language
-            zh: 编程语言
+      - name: content
+        description:
+          en: the JSON text
+          zh: JSON文本
+      - name: programming_language
+        description:
+          en: the programming language
+          zh: 编程语言
     name:
       en: Generate Code
       zh: 生成代码

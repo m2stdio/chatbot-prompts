@@ -17,14 +17,14 @@ prompt:
 tasks:
   write_article:
     input_params:
-      - subject:
-          description:
-            en: the subject of the article
-            zh: 文章的主题
-      - style:
-          description:
-            en: style of the article
-            zh: 风格
+      - name: subject
+        description:
+          en: the subject of the article
+          zh: 文章的主题
+      - name: style
+        description:
+          en: style of the article
+          zh: 风格
     name:
       en: Write Article
       zh: 写文章

@@ -45,14 +45,14 @@ commands:
 tasks:
   create_poem:
     input_params:
-      - sentence:
-          description:
-            en: the sentence to base the poem on
-            zh: 用于创作诗歌的句子
-      - style:
-          description:
-            en: the style of the poem
-            zh: 诗歌的风格
+      - name: sentence
+        description:
+          en: the sentence to base the poem on
+          zh: 用于创作诗歌的句子
+      - name: style
+        description:
+          en: the style of the poem
+          zh: 诗歌的风格
     name:
       en: Create Poem
       zh: 创作诗歌
@@ -83,14 +83,14 @@ tasks:
            ...
        improve_poem:
            input_params:
-            - original_poem:
-                description:
-                    en: The original poem to be improved
-                    zh: 需要改进的原诗
-            - suggestions:
-                description:
-                    en: Suggestions for improving the poem
-                    zh: 改进诗歌的建议
+            - name: original_poem
+              description:
+                  en: The original poem to be improved
+                  zh: 需要改进的原诗
+            - name: suggestions
+              description:
+                  en: Suggestions for improving the poem
+                  zh: 改进诗歌的建议
            name:
                en: Improve Poem
                zh: 改进诗歌
@@ -109,32 +109,32 @@ tasks:
 
 ```yaml
 input_params:
-  - style:
-      description:
-        en: The style of the poem
-        zh: 诗歌的风格
-      options:
-        en:
-          - Haiku
-          - Sonnet
-          - Free Verse
-        zh:
-          - 俳句
-          - 十四行诗
-          - 自由诗
+  - name: style
+    description:
+      en: The style of the poem
+      zh: 诗歌的风格
+    options:
+      en:
+        - Haiku
+        - Sonnet
+        - Free Verse
+      zh:
+        - 俳句
+        - 十四行诗
+        - 自由诗
 ```
 
 同样的，我们也可以为参数添加 default 默认值
 
 ```yaml
 input_params:
-  - style:
-      description:
-        en: The style of the poem
-        zh: 诗歌的风格
-      default:
-        en: Free Verse
-        zh: 自由诗
+  - name: style
+    description:
+      en: The style of the poem
+      zh: 诗歌的风格
+    default:
+      en: Free Verse
+      zh: 自由诗
 ```
 
 ## 组合任务

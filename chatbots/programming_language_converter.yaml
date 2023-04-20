@@ -19,14 +19,14 @@ commands:
 tasks:
   convert_code:
     input_params:
-      - content:
-          description:
-            en: the source code
-            zh: 源代码
-      - target_language:
-          description:
-            en: the target programming language
-            zh: 目标编程语言
+      - name: content
+        description:
+          en: the source code
+          zh: 源代码
+      - name: target_language
+        description:
+          en: the target programming language
+          zh: 目标编程语言
     name:
       en: Convert Code
       zh: 转换代码

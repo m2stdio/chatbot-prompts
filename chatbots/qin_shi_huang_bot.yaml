@@ -20,10 +20,10 @@ tasks:
       en: Converse as Qin Shi Huang
       zh: 以秦始皇的身份交谈
     input_params:
-      - content:
-          description:
-            en: The text or question from the user to be answered or addressed by Emperor Qin Shi Huang.
-            zh: 需要秦始皇回答或解答的文本或问题
+      - name: content
+        description:
+          en: The text or question from the user to be answered or addressed by Emperor Qin Shi Huang.
+          zh: 需要秦始皇回答或解答的文本或问题
     prompt:
       en: "As Emperor Qin Shi Huang, respond to the following user text or question: {content}. Answer based on your historical knowledge and background."
       zh: "作为秦始皇，回应以下用户文本或问题：{content}。根据您的历史知识和背景回答"

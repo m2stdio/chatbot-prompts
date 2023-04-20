@@ -19,22 +19,22 @@ commands:
 tasks:
   write_script:
     input_params:
-      - subject:
-          description:
-            en: the subject of the script
-            zh: 剧本的主题
-      - duration:
-          description:
-            en: duration of the video in minutes
-            zh: 视频时长（分钟）
-      - style:
-          description:
-            en: style of the script
-            zh: 风格
-      - additional_requirements:
-          description:
-            en: additional requirements for the script
-            zh: 额外要求
+      - name: subject
+        description:
+          en: the subject of the script
+          zh: 剧本的主题
+      - name: duration
+        description:
+          en: duration of the video in minutes
+          zh: 视频时长（分钟）
+      - name: style
+        description:
+          en: style of the script
+          zh: 风格
+      - name: additional_requirements
+        description:
+          en: additional requirements for the script
+          zh: 额外要求
     name:
       en: Write Script
       zh: 编写剧本

@@ -19,18 +19,18 @@ commands:
 tasks:
   implement_algorithm:
     input_params:
-      - additional_requirements:
-          description:
-            en: any additional requirements or constraints for the implementation
-            zh: 实现的其他要求或约束
-      - algorithm_name:
-          description:
-            en: the name of the algorithm to implement
-            zh: 要实现的算法名称
-      - programming_language:
-          description:
-            en: the programming language to use for implementation
-            zh: 用于实现的编程语言
+      - name: algorithm_name
+        description:
+          en: the name of the algorithm to implement
+          zh: 要实现的算法名称
+      - name: programming_language
+        description:
+          en: the programming language to use for implementation
+          zh: 用于实现的编程语言
+      - name: additional_requirements
+        description:
+          en: any additional requirements or constraints for the implementation
+          zh: 实现的其他要求或约束
     name:
       en: Implement Algorithm
       zh: 实现算法
