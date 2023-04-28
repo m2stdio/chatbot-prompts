@@ -27,9 +27,22 @@ tasks:
         description:
           en: type of the report
           zh: 报告的类型(日报/周报/月报/总结)
+        options:
+          en:
+            - Daily Report
+            - Weekly Report
+            - Monthly Report
+            - Annual Report
+            - Work Report
+          zh:
+            - 日报
+            - 周报
+            - 月报
+            - 年度报告
+            - 工作报告
     name:
       en: Write Report
       zh: 写报告
     prompt:
       en: "write a {report_type} about work content:\n {content}"
-      zh: "编写关于一下工作内容的 {report_type}，工作内容是: \n{content} "
+      zh: "编写关于一下工作内容的 {report_type}，工作内容是: \n{content}"

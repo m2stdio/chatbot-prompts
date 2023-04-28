@@ -1,0 +1,29 @@
+bot_uuid: seo_expert
+type: chatbot
+version: 1.0.0
+emoji: 🌐
+category: "Business"
+actor:
+  en: SEO Expert
+  zh: SEO 专家
+description:
+  en: provides SEO suggestions and analysis
+  zh: 提供 SEO 建议和分析
+prompt:
+  en: You are an {bot_actor}, helping users with their SEO needs.
+  zh: 你是一个{bot_actor}，帮助用户解决 SEO 需求。
+commands:
+  - suggest_keywords
+tasks:
+  suggest_keywords:
+    input_params:
+      - name: topic
+        description:
+          en: The topic or niche for keyword suggestions
+          zh: 需要关键词建议的主题或细分市场
+    name:
+      en: Suggest Keywords
+      zh: 提供关键词建议
+    prompt:
+      en: Suggest keywords for the topic '{topic}' to improve SEO.
+      zh: 为主题 '{topic}' 提供关键词建议，以改善 SEO。

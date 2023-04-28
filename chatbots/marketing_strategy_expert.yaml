@@ -1,0 +1,109 @@
+bot_uuid: marketing_strategy_expert
+type: chatbot
+version: 1.0.0
+emoji: 💼
+category: "Business"
+actor:
+  en: Marketing Strategist
+  zh: 市场营销策略师
+description:
+  en: helps users with marketing strategy analysis
+  zh: 帮助用户进行市场营销策略分析
+prompt:
+  en: You are a {bot_actor}, assisting users in developing effective marketing strategies.
+  zh: 你是一个{bot_actor}，协助用户制定有效的市场营销策略
+commands:
+  - competitor_analysis
+  - market_segmentation
+  - target_audience_analysis
+  - brand_positioning
+  - recommend_channels
+  - create_strategy
+  - set_kpis
+tasks:
+  competitor_analysis:
+    input_params:
+      - name: industry
+        description:
+          en: The industry in which the user's business operates
+          zh: 用户业务所在的行业
+    name:
+      en: Competitor Analysis
+      zh: 竞争对手分析
+    prompt:
+      en: Analyze the competitors in the '{industry}' industry and provide insights.
+      zh: 分析 '{industry}' 行业的竞争对手并提供见解。
+  market_segmentation:
+    input_params:
+      - name: market_data
+        description:
+          en: Market data and trends to be considered for segmentation
+          zh: 用于市场细分的市场数据和趋势
+    name:
+      en: Market Segmentation
+      zh: 市场细分
+    prompt:
+      en: Segment the market based on the provided data '{market_data}'
+      zh: 根据提供的数据 '{market_data}' 进行市场细分。
+  target_audience_analysis:
+    input_params:
+      - name: target_market
+        description:
+          en: The target market for the user's business
+          zh: 用户业务的目标市场
+    name:
+      en: Analyze Target Audience for the market
+      zh: 分析市场的目标受众
+    prompt:
+      en: Analyze the target audience for the '{target_market}' market.
+      zh: 分析 '{target_market}' 市场的目标受众。
+  brand_positioning:
+    input_params:
+      - name: target_audience
+        description:
+          en: The target audience for the user's business
+          zh: 用户业务的目标受众
+    name:
+      en: Brand Positioning-Develop a brand positioning strategy for target audience
+      zh: 品牌定位-为目标受众制定品牌定位策略
+    prompt:
+      en: Develop a brand positioning strategy for the target audience '{target_audience}'.
+      zh: 为目标受众 '{target_audience}' 制定品牌定位策略。
+  recommend_channels:
+    input_params:
+      - name: target_audience
+        description:
+          en: The target audience for the user's business
+          zh: 用户业务的目标受众
+    name:
+      en: Recommend Marketing Channels
+      zh: 推荐营销渠道
+    prompt:
+      en: Recommend marketing channels for reaching the target audience '{target_audience}'.
+      zh: 推荐能触及目标受众 '{target_audience}' 的营销渠道。
+
+  create_strategy:
+    input_params:
+      - name: strategy_requirements
+        description:
+          en: The user's requirements for the marketing strategy
+          zh: 用户对市场营销策略的需求
+    name:
+      en: Create Marketing Strategy
+      zh: 制定营销策略
+    prompt:
+      en: "Create a marketing strategy based on the user's requirements: '{strategy_requirements}'."
+      zh: "根据用户需求: '{strategy_requirements}'\n 制定营销策略"
+
+  set_kpis:
+    input_params:
+      - name: strategy_goals
+        description:
+          en: The goals of the marketing strategy
+          zh: 营销策略的目标
+    name:
+      en: Set KPIs
+      zh: 设定 KPI
+    prompt:
+      en: "Set key performance indicators (KPIs) for the marketing strategy goals: '{strategy_goals}'"
+      zh: "为营销策略目标: '{strategy_goals}'\n 设定关键绩效指标 (KPI)"
